@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Softech | Student List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body class="bg-light">
+
+  <nav class="navbar navbar-dark bg-primary">
+    <div class="container-fluid">
+      <span class="navbar-brand">Visual Softech Dashboard</span>
+      <button id="btnLogout" class="btn btn-danger btn-sm">Logout</button>
+    </div>
+  </nav>
+
+  <div class="container mt-4">
+    <div class="d-flex justify-content-between mb-3">
+      <h3>All Students</h3>
+      <a href="create.html" class="btn btn-success">+ Add New Student</a>
+    </div>
+
+    <table class="table table-bordered table-striped">
+      <thead class="table-primary text-center">
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Address</th>
+          <th>State</th>
+          <th>Phone</th>
+          <th>Photo</th>
+          <th>Subjects</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="studentTableBody">
+        <tr>
+          <td colspan="8" class="text-center">Loading students...</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="assets/js/index.js"></script>
+</body>
+</html>
